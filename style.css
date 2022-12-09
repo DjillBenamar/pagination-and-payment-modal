@@ -20,7 +20,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main section {
@@ -33,7 +33,7 @@ main section {
     padding-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 h3 {
     color: #929191;
