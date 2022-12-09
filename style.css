@@ -180,7 +180,7 @@ main section div:nth-of-type(1) span:active {
     align-items:flex-start;
     justify-content:center;
     margin-left: 0px;
-    margin-right: 30%;
+    margin-right: 25%;
 }
 
 .quantity :first-child select {
