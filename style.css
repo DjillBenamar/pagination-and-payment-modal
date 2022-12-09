@@ -324,7 +324,7 @@ main section div:nth-of-type(1) span:active {
 .modal form .sent {
     display: block;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 40%;
     text-align: center;
     border:0px;
