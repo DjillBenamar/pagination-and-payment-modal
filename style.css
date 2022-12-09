@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#a9b9f3, #beadf3);
+    height: auto;
+}
+
+.coverBody {
+    opacity: 10%;
+}
+
+main {
+    position: absolute;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+main section {
+    min-width: 30%; /* the min-width should be regulated according to the device width with JS */
+    max-width: 500px;
+    background-color: #fdfdfd;
+    box-shadow: 1px 1px 5px #b8b1df,
+                -1px -1px 5px #b8b1df;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 5px;
+}
+h3 {
+    color: #929191;
+    text-align: center;
+    font-weight: 500;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0px;
+}
+
+main section .sectionHead {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+main section .sectionHead button {
+    border-radius: 8px;
+    background-image: linear-gradient(to right,#3cc87b, #84b684);
+    width: 30%;
+    border: 0px;
+    box-shadow: 2px 2px 4px #cde0cf,
+                -2px -2px 2px #cde0cf;
+}
+
+main section .sectionHead button:hover {
+    background-image: linear-gradient(to right,#2926c0, #5d6186);
+}
+
+main section .sectionHead button:active {
+    background-image: linear-gradient(to right,#9c986d, #ffef08);
+}
+
+main section div,article {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main section div figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 206px;
+    min-width: 70px;
+    max-width: 120px;
+    padding: 0px;
+
+}
+
+main section div figure img {
+    position:absolute;
+    min-width: 70px;
+    max-width: 120px;
+    height: 206px;
+   /* margin: auto;
+    display: block;*/
+}
+
+main section div figure img:nth-of-type(1) {
+    z-index: 4;
+}
+
+main section div figure img:nth-of-type(2) {
+    z-index: 3;
+}
+
+main section div figure img:nth-of-type(3) {
+    z-index: 2;
+}
+
+main section div figure img:nth-of-type(4) {
+    z-index: 1;
+}
+
+
+main section div:nth-of-type(1) span:nth-of-type(1) {
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid #d8d8d8;
+    border-top: 4px solid #d8d8d8;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);   
+    -moz-transform: rotate(-45deg);   
+
+   
+}
+
+main section div:nth-of-type(1) span:nth-of-type(2) {
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid #d8d8d8;
+    border-top: 4px solid #d8d8d8;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg); 
+    display: inline-block;
+}
+
+main section div:nth-of-type(1) span:hover {
+    border-color: aqua;
+}
+
+main section div:nth-of-type(1) span:active {
+    border-color: green;
+}
+
+.slidePoints span {
+    width: 8px;
+    height:8px;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    margin: 4px;
+}
+
+.slidePoints :first-child {
+    background-color: #1f9af4;
+}
+
+.actualPoint {
+    background-color: #1f9af4;
+}
+
+.quantity {
+    padding: 2px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    color: #989797;
+}
+
+.quantity :first-child {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    margin-left: 0px;
+    margin-right: 30%;
+}
+
+.quantity :first-child select {
+    color: #989797;
+    background-color: #e2e0e0;
+    border: 0px;
+    margin: auto;
+    margin-top: 6px;
+    display: block;
+    padding: 4px;
+}
+
+.quantity :last-child {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items:flex-start;
+    justify-content:center;
+    margin-left: 0px;
+    padding-left: 0px;
+
+    color: #378ee2;
+    font-size: larger;
+    font-weight: 100;
+    font-family: tahoma, calibri, sans-serif;
+}
+
+
+/*   --
+    ----
+  ---------
+------------- THE FORM CSS STYLE  ----------
+  ---------
+    ----
+     --
+*/
+
+.modal {
+    z-index: 10;
+    position: fixed;
+    height: auto;
+    background-color: #fdfdfd;
+    border-radius: 3px;
+    padding-top: 0px;
+    top:-5px;
+}
+
+.modalDV {
+   
+   display: visible;
+}
+
+.modalDN {
+    
+    display: none;
+}
+
+.modal p {
+    color:#b9b9b9;
+    text-align: right;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: x-large;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.modal p span {
+    float: left;
+    color: #b65d5d;
+    font-style: normal;
+    font-family: calibri;
+    font-weight: 400;
+    border:1px solid pink;
+    padding:1px 4px 1px 4px;
+    border-radius: 2px;
+}
+
+.modal p span:hover {
+    border:2px solid rgb(161, 11, 11);
+    font-weight: 600;
+    background-color: #f0ebeb;
+    cursor: pointer;
+
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 25px 6px 25px;
+}
+
+.modal form > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content:center;
+    height: 60px;
+    width: 97%;
+    padding-right:0px ;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.modal form  input:not(.sent),label {
+    margin: 2px;
+}
+
+.modal form > label,div {
+    margin-top: 20px;
+}
+
+.modal form > input {
+    width: 92%;
+}
+
+.modal form > div input:not(.sent),label {
+    width: 45%;
+}
+
+.modal form label {
+    color:#d4d4d4;
+    font-size: small;
+    font-family: tahoma;
+}
+
+.modal form input:not(.sent) {
+    color: #989797;
+    font-size: larger;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.modal form .sent {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 40%;
+    text-align: center;
+    border:0px;
+    background-image: linear-gradient(to right,#3cc87b, #84b684);
+    border-radius: 12px;
+    padding: 7px;
+    color: #fdfefd;
+    font-weight: 700;
+    box-shadow: 2px 2px 4px #cde0cf,
+                -2px -2px 2px #cde0cf;
+    cursor: pointer;
+}
+
+.modal form .sent:hover {
+    background-image: linear-gradient(to right,#2926c0, #5d6186);
+}
+
+.modal form .sent:active {
+    background-image: linear-gradient(to right,#9c986d, #ffef08);
+}
+
